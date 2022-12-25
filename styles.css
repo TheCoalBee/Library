@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    background-color: #EEEEEE;
+    font-family:Roboto, sans-serif;
+}
+
+#add-book {
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    font-size:32px;
+    font-weight:bold;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    border:none;
+    background-color: #fff;
+    color:black;
+}
+#bookshelf {
+    gap:25px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:25px;
+}
+
+/* Book form */
+#book-form-container {
+    position:fixed;
+    display:none;
+    bottom:125px;
+    right:50px;
+    width:200px;
+    padding:15px 0;
+    border:3px solid black;
+}
+#book-form {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#book-form label {
+    font-size:16px;
+    color:black;
+}
+#book-form input[type="text"], #book-form input[type="number"] {
+    font-size:16px;
+    border:1px solid black;
+    width:175px;
+    margin-bottom:15px;
+}
+#book-form button[type="submit"], #book-form button[type="button"] {
+    font-size:16px;
+    margin-top:15px;
+}
+
+#book-read-inputs {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#book-form #book-read-input {
+    margin-left:15px;
+    -webkit-appearance: none;
+    width:16px;
+    height:16px;
+    border:2px solid #555;
+}
+#book-form #book-read-input:checked {
+    background-color: #abd;
+}
+
+/* Book element */
+.book {
+    position:relative;
+    background-color: #fff;
+    border-radius:15px;
+    padding:15px 0 45px 0;
+    text-align:center;
+    color:black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.book-title {
+    font-size:24px;
+    margin:0;
+    margin-bottom:15px;
+}
+
+.book-author {
+    font-size:16px;
+    margin:0;
+}
+.book-pages {
+    font-size:16px;
+    margin:0;
+    margin-bottom:15px;
+}
+
+.remove-btn {
+    font-size:16px;
+    font-weight:bold;
+    width:35px;
+    border:none;
+    height:35px;
+    padding:5px;
+    background-color:#674747;
+    color:#EEEEEE;
+    border-radius:50%;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+
+
+.book button:first-of-type {
+    font-size:16px;
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    height:35px;
+    color:white;
+    border:none;
+    padding:0 15px;
+    border-radius:5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    transition: background-color 0.1s ease;
+}
+
+.not-read-btn {
+    background-color: #F96666;
+}
+.read-btn {
+    background-color:#829460;
+}
